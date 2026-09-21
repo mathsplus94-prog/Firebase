@@ -18,8 +18,8 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 # ============================================================
 # CONFIG
 # ============================================================
-BOT_TOKEN = "8953630903:AAG2v22_3fDc4SvfNc59YPcyOdi2zot0KRg"
-
+import os
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "fallback")
 ALLOWED_IDS = [
     6297919814,   # Ayush (admin)
     # 123456789,  # aur admin add karna ho to
